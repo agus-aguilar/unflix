@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Unflix</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">UNFLIX</h1>
+        <h2 class="subTitulo">Las mejores series y peliculas</h2>
+    </header>
+    <main>
+
+        <section class="container">
+            <h3>Iniciar Sesion</h3>
+            <article>
+                <form method="post">
+                    
+                    <div class="input">
+                        <input type="text" name="usuario" id="usuario" required>
+                        <label for="usuario">Nombre de Usuario: </label>
+                    </div>
+
+                    <div class="input contraseña">
+                        <input type="password" name="contraseña" id="contraseña" required>                                              
+                        <label for="contraseña">Contraseña: </label>
+                        <p class="recuperar"> ¿No recuerdas tu contraseña? <a href="recuperar-contraseña.html">Recuperar Contraseña</a></p>
+                    </div>
+
+                    <div class="checkbox">
+                        <button class="iniciarSesion"><a href="vista-principal.html">Iniciar Sesion</a></button>
+                        <label for="recuerdame">Mantener Sesion Iniciada</label>
+                        <input type="checkbox" name="recuerdame" id="recuerdame">
+                    </div>
+
+                </form>
+            </article>
+
+            <article>
+                <p class="registrarse">¿Primera vez en Unflix? <a href="registrarse.html" target="_blank">Registrarse</a></p>
+                
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
