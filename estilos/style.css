@@ -3,10 +3,7 @@
 /*IMPORTAR PARTES DEL CSS*/
 
 @import url(global.css);
-
-body{
-    background-image: url(https://www.islabit.com/wp-content/uploads/2020/12/cintas-online.jpg);
-}
+@import url(vista-principal.css);
 
 h1{
     color: #8847ff;

@@ -14,7 +14,6 @@ img {
 }
 
 nav {
-    background-color: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +23,22 @@ nav {
 .nav-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 0 10%;
 }
 
-nav li {
+li {
     list-style: none;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
 }
 
 .buscar-por-categoria {
@@ -39,10 +48,9 @@ nav li {
 }
 
 .peliculas-series {
-    background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -51,12 +59,11 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    padding: 3%;
-    background-color: peru;
+    width: 25%;
+    margin-bottom: 5%;
 }
 
 .peliculas-series div img {
-    width: 100%;
+    width: 50%;
     margin-bottom: 2%;
 }
