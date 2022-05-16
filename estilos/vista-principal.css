@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+
+    width: 30px;
+    background-color: transparent;
+}
+
+nav {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+}
+
+nav li {
+    list-style: none;
+}
+
+.buscar-por-categoria {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3%;
+}
+
+.peliculas-series {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.peliculas-series div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 3%;
+    background-color: peru;
+}
+
+.peliculas-series div img {
+    width: 100%;
+    margin-bottom: 2%;
+}
