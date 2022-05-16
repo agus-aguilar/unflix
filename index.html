@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>Unflix</title>
 </head>
 
@@ -18,31 +18,34 @@
 
         <section class="container">
             <h3>Iniciar Sesion</h3>
+            
             <article>
-                <form method="post">
+                <form method="post" >
                     
                     <div class="input">
                         <input type="text" name="usuario" id="usuario" required>
                         <label for="usuario">Nombre de Usuario: </label>
                     </div>
 
-                    <div class="input contraseña">
+                    <div class="input box">
                         <input type="password" name="contraseña" id="contraseña" required>                                              
                         <label for="contraseña">Contraseña: </label>
-                        <p class="recuperar"> ¿No recuerdas tu contraseña? <a href="recuperar-contraseña.html">Recuperar Contraseña</a></p>
+                        <p class="recuperar"> ¿No recuerdas tu contraseña? <a href="./html/recuperar-mail.html">Recuperar Contraseña</a></p>
                     </div>
 
                     <div class="checkbox">
-                        <button class="iniciarSesion"><a href="vista-principal.html">Iniciar Sesion</a></button>
-                        <label for="recuerdame">Mantener Sesion Iniciada</label>
-                        <input type="checkbox" name="recuerdame" id="recuerdame">
+                        <button class="button"><a href="vista-principal.html">Iniciar Sesion</a></button>
+                        <div>
+                            <label for="recuerdame">Mantener Sesion Iniciada</label>
+                            <input type="checkbox" name="recuerdame" id="recuerdame">
+                        </div>
                     </div>
 
                 </form>
             </article>
 
             <article>
-                <p class="registrarse">¿Primera vez en Unflix? <a href="registrarse.html" target="_blank">Registrarse</a></p>
+                <p class="registrarse">¿Primera vez en Unflix? <a href="./html/registrarse.html">Registrarse</a></p>
                 
             </article>
 

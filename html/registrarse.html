@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <header class="headerForm">
+        <h2>Registrarse</h2>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <article>
+                <p>Ingrese sus datos a continuacion: </p>
+                <form action="">
+
+                    <div class="input">
+                        <input type="text" name="nombre" id="nombre" required >
+                        <label for="nombre">Nombre: </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="apellido" id="apellido" required >
+                        <label for="apellido">Apellido: </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="email" name="mail" id="mail" required>
+                        <label for="mail">Mail: </label>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="usuario" id="usuario" required>
+                        <label for="usuario">Usuario: </label>
+                    </div>
+
+                    <div class="input">
+                        <input id="pass" type="password" name="pass" required >
+                        <label for="pass">Ingresa tu contraseña:</label>
+                    </div>
+
+                    <div class="input">
+                        <input id="pass2" type="password" name="pass2" required>
+                        <label for="pass2">Repetir contraseña:</label>
+                    </div>
+
+                </form>
+            </article>
+
+        </section>
+        <section class="container">
+
+            <article>
+                <p>Ingrese el metodo de pago preferido. Luego tiene la posibilad de cambiarlo.</p>
+                <form action="">
+
+                    <div class="metodoPago">
+                        <div>
+                            <label for="tarjeta">Tarjeta de crédito:</label>
+                            <input type="radio" name="pago" id="tarjeta" value="tarjeta">
+                        </div>
+
+                        <div>
+                            <label for="numtarjeta"></label>
+                            <input type="number" name="numtarjeta" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" class="input-datos">
+                            <label for="codseg"></label>
+                            <input type="number" name="codseg" id="codseg" placeholder="XXX" class="input-datos">
+                        </div>
+                    </div>
+
+                    <div class="metodoPago">
+                        <div>
+                            <label for="cupon">Cupon de pago: </label>                        
+                            <input type="radio" name="pago" id="cupon" value="cupon">   
+                        </div>
+
+                        <div>
+                            <label for="pagofacil">Pago facil</label>
+                            <input type="checkbox" name="pagofacil" id="pagofacil">
+
+                            <label for="rapipago">Rapipago</label>
+                            <input type="checkbox" name="rapipago" id="rapipago">
+                        </div> 
+                    </div>
+
+
+                    <div class="metodoPago">
+                        <div>
+                            <label for="transferencia">Transferencia bancaria </label>
+                            <input type="radio" name="pago" id="transferencia" value="transferencia">
+                        </div>
+                        
+                        <label for="cbu">CBU: </label>
+                        <input type="text" name="cbu" id="cbu" placeholder="2183909411100018971375" class="input-datos">
+                    </div>
+
+                    <div class="group-buttons">
+                        <button class="button"><a href="../index.html">Enviar</a></button>
+                        <button class="button"><a href="../index.html">Cancelar</a></button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

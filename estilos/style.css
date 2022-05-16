@@ -8,6 +8,7 @@
 body{
     background-image: url(https://www.islabit.com/wp-content/uploads/2020/12/cintas-online.jpg);
 }
+
 h1{
     color: #8847ff;
     font-size: 100px;
@@ -23,12 +24,12 @@ h2{
 .container{
     background-color: rgba(19, 19, 19, 0.842);
     border-radius: 5px;
-    width: 310px;
+    width: 25%;
     margin: auto;
+    margin-top: 10px;
     padding: 20px 40px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.505),-10px -10px 20px rgba(0, 0, 0, 0.361);
 }
-
 .container h3{
     color: #8847ff;
     font-family: 'Oswald', sans-serif;
@@ -69,13 +70,20 @@ input:valid~label{
 }
 
 .checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px;
     font-size: 13px;
     padding: 10px 5px;
     font-size: 14px;
     color: #9b9b9b;
 }
-.iniciarSesion{
+.checkbox div{
+    margin: 10px;
+}
+.button{
     border: none;
     border-radius: 3px;
     margin-top: auto;
@@ -85,17 +93,22 @@ input:valid~label{
     text-decoration: none;
   
 }
-.iniciarSesion a{
-    color: aliceblue
+
+.button:hover{
+    background-color: #000000;
 }
-.iniciarSesion a:hover{
+.button a{
+    color: aliceblue;
+}
+.button a:hover{
     text-decoration: none;
+    color: #8847ff
 }
-.contraseña{
+.box{
     position: relative;
 }
 .recuperar{
-    position: absolute;
+    position:absolute;
     font-size: 13px;
     padding: 5px 0;
     right: 0;
@@ -115,4 +128,52 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+.container article p{
+    color: #9b9b9b;
+    text-align: center;
+}
+.headerForm{
+    margin: 4% 0;
+}
+.group-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 13px;
+    padding: 10px 5px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+#numtarjeta {
+    width: 10em;
+    
+}
+#codseg {
+    width: 3em;
+}
+#cbu{
+    width: 11em;
+}
+.metodoPago{
+    margin: 20px 0;
+    position: relative;
+    color: #9b9b9b;
+    display: flex;
+    flex-direction: column;
+    
+}
+.metodoPago div label{
+    color: #9b9b9b;
+}
+.input-datos{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 0.4px solid #8847ff;
+    font-size: 14px;
+    color: aliceblue;
 }

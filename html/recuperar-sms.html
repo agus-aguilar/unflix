@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Recuperar Contraseña</title>
+</head>
+
+<body>
+
+    <header class="headerForm">
+        <h2>Recuperar Contraseña</h2>
+    </header>
+
+    <main>
+        <section class="container">
+            <article>
+                <form action="">
+    
+                    <p>Te enviaremos un SMS a tu numero con instrucciones sobre cómo restablecer tu contraseña.</p>
+    
+                    <div class="input">
+                        <label for="usuario">Nombre de usuario: </label>
+                        <input type="text" name="usuario" id="usuario" required >
+                    </div>
+    
+                    <div class="input box">
+                        <label for="tel">Ingresa tu telefono:</label>
+                        <input type="tel" name="tel" id="tel" required  pattern="[0-9]{8,}">
+                        <p class="recuperar">¿No recuerdas tu telefono?<a href="./recuperar-mail.html">Ingresa tu email</a></p>
+                    </div>
+    
+                    <div class="group-buttons">
+                        <button class="button"><a href="../index.html">Enviar</a></button>
+                        <button class="button"><a href="../index.html">Cancelar</a></button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
