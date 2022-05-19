@@ -40,10 +40,10 @@ li {
 .peliculas-series div {
     margin: 50px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     text-align: center;
     cursor: pointer;
+    height: 70%;
 
     box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
@@ -63,7 +63,7 @@ li {
 }
 
 .peliculas-series img {
-    height: 110%;
+    height: 100%;
     width: 100%;
 }
 
@@ -72,4 +72,23 @@ li {
 a:hover {
     text-decoration: underline;
     color: var(--color-principal);
+}
+
+
+/********SERIES DETALLES*********/
+
+.elmarginal {
+    width: 67%;
+}
+
+.thewalkingdead {
+    width: 77%;
+}
+
+.shrek {
+    width: 74%;
+}
+
+.ozark {
+    width: 68%;
 }
