@@ -16,18 +16,19 @@ img {
     max-width: 100%;
 }
 
-
-body{
-    background-image: url(https://www.islabit.com/wp-content/uploads/2020/12/cintas-online.jpg);
-
-    display: flex;
-    flex-direction: column;
-}
-
 li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+body{
+    background-image: url(https://www.islabit.com/wp-content/uploads/2020/12/cintas-online.jpg);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
 }
