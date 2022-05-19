@@ -71,7 +71,8 @@ iframe {
 
 .similares-img {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 30%);
+    padding: 10px 50px;
 }
 
 .similares-img img {
