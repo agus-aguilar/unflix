@@ -1,0 +1,29 @@
+@import url(tipografia.css);
+@import url(variables.css);
+@import url(style.css);
+@import url(nav.css);
+
+body{
+    background-image: none;
+    background-color: var(--all-background-color);
+}
+
+.user{
+    background-image: url(https://thumbs.dreamstime.com/b/omita-el-icono-del-perfil-avatar-placeholder-gris-de-la-foto-99724602.jpg);
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    background-color: #8847ff;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    top:  -40px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-principal);
+}
+main{
+    margin: 5% 0;
+}
