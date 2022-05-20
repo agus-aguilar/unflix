@@ -6,7 +6,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -68,14 +67,15 @@ nav {
 
 /** BUSCADOR POR CATEGORIA **/
 
-.buscar-por-categoria {
+.buscar-desplegable {
+    margin-top: 10%;
     display: flex;
     justify-content: flex-end;
     padding: 20px 5% 0;
     color: white;
 }
 
-#categorias {
+#categorias,#temporadas,#capitulos {
     padding: 4px 8px;
     border-radius: 10px;
     background-color: transparent;

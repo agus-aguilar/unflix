@@ -74,14 +74,32 @@ iframe {
     grid-template-columns: repeat(4, 30%);
     padding: 10px 50px;
 }
-
+.similares-img a {
+    width: 79%;
+}
 .similares-img img {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     cursor: pointer;
     border-radius: 2px;
 }
+.comenzar{
+    display: flex;
+    justify-content: center;
+}
+.comenzar a button{
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: transparent;
+  
+}
 
+.buscar-desplegable{
+    margin: 0;
+}
 /** HOVER **/
 
 a:hover {
@@ -95,4 +113,13 @@ a:hover {
     -ms-transform:scale(1.05);
     -o-transform:scale(1.05);
     transform:scale(1.05);
+}
+
+.comenzar a button:hover{
+    background-color: rgb(76, 0, 255);
+    border: none;
+    color: aliceblue;
+}
+.btn-comenzar:hover{
+    text-decoration: none;
 }

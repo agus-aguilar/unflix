@@ -30,7 +30,7 @@ li {
 }
 
 #header-vista-principal {
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
