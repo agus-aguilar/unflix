@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/unflix-logo-svg.png" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/validacion-index.js"></script>
     <title>Unflix</title>
 </head>
 
@@ -23,25 +25,29 @@
             <h3>Iniciar Sesion</h3>
             
             <article>
-                <form method="post" >
+                <form action="html/vistas/vista-principal.html" name="form" id="form" >
                     
                     <div class="input">
-                        <input type="text" name="usuario" id="usuario" required>
+                        <input type="text" name="usuario" id="usuario">
                         <label for="usuario">Nombre de Usuario: </label>
                     </div>
 
                     <div class="input box">
-                        <input type="password" name="contraseña" id="contraseña" required>                                              
+                        <input type="password" name="contraseña" id="contraseña">                                              
                         <label for="contraseña">Contraseña: </label>
-                        <p class="recuperar"> ¿No recuerdas tu contraseña? <a href="./html/recuperar/recuperar-mail.html">Recuperar Contraseña</a></p>
+                        <p class="recuperar-opcion"> ¿No recuerdas tu contraseña? <a href="./html/recuperar/recuperar-mail.html">Recuperar Contraseña</a></p>
                     </div>
 
                     <div class="checkbox">
-                        <button class="button"><a href="./html/vistas/vista-principal.html">Iniciar Sesion</a></button>
+                        <input type="submit" value="Iniciar Sesion" class="button">
                         <div>
                             <label for="recuerdame">Mantener Sesion Iniciada</label>
                             <input type="checkbox" name="recuerdame" id="recuerdame">
                         </div>
+                    </div>
+
+                    <div id="mensaje" class="error">
+
                     </div>
 
                 </form>
