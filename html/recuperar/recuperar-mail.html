@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilos/style.css">
     <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="js/validacion-recuperar.js"></script>
     <title>UNFLIX - Recuperar email</title>
 </head>
 
@@ -20,24 +22,26 @@
 
         <section class="container">
             <article>
-                <p class="recuperar">Te enviaremos un email con instrucciones sobre cómo restablecer tu contraseña.</p>
+                <p class="info">Te enviaremos un email con instrucciones sobre cómo restablecer tu contraseña.</p>
 
-                <form action="">
+                <form action="../../index.html" name="form" id="form">
 
                     <div class="input">
-                        <input type="user" name="usuario" id="usuario" required>
+                        <input type="user" name="usuario" id="usuario" >
                         <label for="usuario">Nombre de usuario: </label>
                     </div>
 
                     <div class="input box">
-                        <input id="mail" type="mail" name="mail" required>
+                        <input id="email" type="mail" name="mail" id="email">
                         <label for="mail">Ingrese su E-mail:</label>
-                        <p class="recuperar-opcion">¿No recuerdas tu email?<a href="./recuperar-sms.html">Ingresa tu telefono</a></p>
                     </div>
 
                     <div class="group-buttons">
-                        <button class="button"><a href="../../index.html">Enviar</a></button>
-                        <button class="button"><a href="../../index.html">Cancelar</a></button>
+                        <input type="submit" value="Enviar" class="button" id="enviar" disabled>
+                        <input type="submit" value="Cancelar" class="button" id="cancelar">
+                    </div>
+                    <div id="mensaje" class="error">
+
                     </div>
 
                 </form>

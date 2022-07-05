@@ -99,10 +99,11 @@ input:valid~label{
 
 .button:hover{
     background-color: #000000;
+    color:#8847ff;
 }
 .button a:hover{
     text-decoration: none;
-    color: #8847ff
+    color: #8847ff;
 }
 .box{
     position: relative;
@@ -116,6 +117,10 @@ input:valid~label{
 }
 .recuperar{
     font-size: 1.2em;
+}
+.info{
+    font-size: 1em;
+    color: #9b9b9b;
 }
 
 .registrarse{

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilos/style.css">
     <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="js/validacion-recuperar.js"></script>
     <title>UNFLIX - Recuperar SMS</title>
 </head>
 
@@ -19,24 +21,24 @@
     <main>
         <section class="container">
             <article>
-                <form action="">
+                <form action="../../index.html" id="form" name="form">
     
-                    <p>Te enviaremos un SMS a tu numero con instrucciones sobre cómo restablecer tu contraseña.</p>
+                    <p class="info">Te enviaremos un SMS a tu numero con instrucciones sobre cómo restablecer tu contraseña.</p>
     
                     <div class="input">
+                        <input type="text" name="usuario" id="usuario">
                         <label for="usuario">Nombre de usuario: </label>
-                        <input type="text" name="usuario" id="usuario" required >
                     </div>
     
                     <div class="input box">
+                        <input type="tel" name="tel" id="tel" >
                         <label for="tel">Ingresa tu telefono:</label>
-                        <input type="tel" name="tel" id="tel" required  pattern="[0-9]{8,}">
-                        <p class="recuperar">¿No recuerdas tu telefono?<a href="./recuperar-mail.html">Ingresa tu email</a></p>
+                        <p class="recuperar-opcion">¿No recuerdas tu telefono?<a href="./recuperar-mail.html">Ingresa tu email</a></p>
                     </div>
     
                     <div class="group-buttons">
-                        <button class="button"><a href="../../index.html">Enviar</a></button>
-                        <button class="button"><a href="../../index.html">Cancelar</a></button>
+                        <!-- <input type="submit" value="Enviar" class="button" id="enviar" disabled> -->
+                        <input type="submit" value="Cancelar" class="button">
                     </div>
                 </form>
             </article>
