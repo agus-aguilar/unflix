@@ -1,125 +1,123 @@
 @import url(nav.css);
 @import url(tipografia.css);
 @import url(variables.css);
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 
-    max-width: 100vw;
-    max-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
 
-    font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-    background-color: var(--all-background-color);
+  background-color: var(--all-background-color);
 }
 
 img {
-    max-width: 100%;
-    background-color: transparent;
+  max-width: 100%;
+  background-color: transparent;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-    padding: 20px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 20px 90px;
 }
 
 .img-detalle {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    
-    margin-bottom: 20px;
-    margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 
-    box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+  margin-top: 30%;
+
+  box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
 }
 
 .img-detalle-descripcion {
-    line-height: 40px;
-    padding: 20px;
+  line-height: 40px;
+  padding: 20px;
 }
 
 iframe {
-    width: 100%;
-    border-radius: 10px 0 0 10px;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
 }
 
 .similares {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    line-height: 50px;    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  line-height: 50px;
 }
 
 .similares h3 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .similares-img {
-    display: grid;
-    grid-template-columns: repeat(4, 30%);
-    padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 30%);
+  padding: 10px 50px;
 }
 .similares-img a {
-    width: 79%;
+  width: 79%;
 }
 .similares-img img {
-    width: 70%;
-    margin: 0 auto;
-    cursor: pointer;
-    border-radius: 2px;
+  width: 70%;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 2px;
 }
-.comenzar{
-    display: flex;
-    justify-content: center;
+.comenzar {
+  display: flex;
+  justify-content: center;
 }
-.comenzar a button{
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 3px 20px;
-    font-size: 15px;
-    text-decoration: none;
-    background-color: transparent;
-  
+.comenzar a button {
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 3px 20px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.buscar-desplegable{
-    margin: 0;
+.buscar-desplegable {
+  margin: 0;
 }
 /** HOVER **/
 
 a:hover {
-    text-decoration: underline;
-    color: var(--color-principal);
+  text-decoration: underline;
+  color: var(--color-principal);
 }
 
 .similares img:hover {
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    -ms-transform:scale(1.05);
-    -o-transform:scale(1.05);
-    transform:scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.comenzar a button:hover{
-    background-color: rgb(76, 0, 255);
-    border: none;
-    color: aliceblue;
+.comenzar a button:hover {
+  background-color: rgb(76, 0, 255);
+  border: none;
+  color: aliceblue;
 }
-.btn-comenzar:hover{
-    text-decoration: none;
+.btn-comenzar:hover {
+  text-decoration: none;
 }

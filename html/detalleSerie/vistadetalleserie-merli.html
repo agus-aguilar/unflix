@@ -1,93 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css">
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css" />
+    <link rel="stylesheet" href="../../estilos/slick-theme.css" />
+    <link rel="stylesheet" href="../../estilos/slick.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".similares-img").slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
 
     <title>Merli</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header-vista-principal">
+      <nav>
+        <div class="nav-menu-logo">
+          <a href="./vista-principal.html">
+            <img src="../../img/unflix-logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../vistas/vista-principal.html">HOME</a></li>
+          <li><a href="../vistas/vista-serie.html">SERIES</a></li>
+          <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
+          <li><a href="../perfil.html">PERFIL</a></li>
+        </ul>
 
-        <nav>
-            <div class="nav-menu-logo">
-                <a href="./vista-principal.html">
-                    <img src="../../img/unflix-logo.png" alt="">
+        <div class="buscador-input">
+          <img
+            src="../../img/icon/lupa-buscador.png"
+            alt="lupa-buscador-icon"
+          />
+          <input
+            type="text"
+            placeholder="Buscador"
+            name="buscador"
+            id="buscador"
+          />
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <div class="img-detalle">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rUGeZnlAhP4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="img-detalle-descripcion">
+              <section class="buscar-desplegable">
+                <form action="#">
+                  <select name="temporadas" id="temporadas">
+                    <option value="Temporada 1">Temporada 1</option>
+                    <option value="Temporada 2">Temporada 2</option>
+                    <option value="Temporada 3">Temporada 3</option>
+                  </select>
+
+                  <select name="capitulos" id="capitulos">
+                    <option value="capitulo 1">capitulo 1</option>
+                    <option value="capitulo 2">capitulo 2</option>
+                    <option value="capitulo 3">capitulo 3</option>
+                    <option value="capitulo 4">capitulo 4</option>
+                    <option value="capitulo 5">capitulo 5</option>
+                    <option value="capitulo 6">capitulo 6</option>
+                    <option value="capitulo 7">capitulo 7</option>
+                    <option value="capitulo 8">capitulo 8</option>
+                  </select>
+                </form>
+              </section>
+              <p><strong>Nombre:</strong>Merli</p>
+              <p><strong>Género:</strong>Serie</p>
+              <p>
+                <strong>Actores:</strong>
+                <a
+                  href="https://es.wikipedia.org/wiki/Carlos_Cuevas"
+                  target="_blank"
+                  >Carlos Cuevas</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/David_Solans"
+                  target="_blank"
+                  >David Solans</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Francesc_Orella"
+                  target="_blank"
+                  >Francesc Orella</a
+                >,
+              </p>
+              <p>
+                Surge un conflicto en la familia de Joan. Pol se distancia de
+                Bruno y Gerard no acepta la relación de su madre con Merlí.
+              </p>
+              <div class="comenzar">
+                <a
+                  href="https://www.youtube.com/watch?v=rUGeZnlAhP4&ab_channel=ttvnews"
+                  target="_blank"
+                  class="btn-comenzar"
+                >
+                  <button>Comenzar</button>
                 </a>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="../vistas/vista-principal.html">HOME</a></li>
-                <li><a href="../vistas/vista-serie.html">SERIES</a></li>
-                <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
-                <li><a href="../perfil.html">PERFIL</a></li>
-            </ul>
-
-            <div class="buscador-input">
-                <img src="../../img/icon/lupa-buscador.png" alt="lupa-buscador-icon">
-                <input type="text" placeholder="Buscador" name="buscador" id="buscador">
+          </div>
+          <div class="similares">
+            <div>
+              <h3>SIMILARES</h3>
             </div>
-        </nav>
-
-        <main>
-            <section>
-                <div class="img-detalle">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rUGeZnlAhP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="img-detalle-descripcion">
-
-                        <section class="buscar-desplegable">
-                            <form action="#">
-
-                                <select name="temporadas" id="temporadas">
-                                    <option value="Temporada 1">Temporada 1</option>
-                                    <option value="Temporada 2">Temporada 2</option>
-                                    <option value="Temporada 3">Temporada 3</option>
-                                </select>
-
-                                <select name="capitulos" id="capitulos">
-                                    <option value="capitulo 1">capitulo 1</option>
-                                    <option value="capitulo 2">capitulo 2</option>
-                                    <option value="capitulo 3">capitulo 3</option>
-                                    <option value="capitulo 4">capitulo 4</option>
-                                    <option value="capitulo 5">capitulo 5</option>
-                                    <option value="capitulo 6">capitulo 6</option>
-                                    <option value="capitulo 7">capitulo 7</option>
-                                    <option value="capitulo 8">capitulo 8</option>
-        
-                                </select>
-                            </form>
-                        </section>
-                        <p><strong>Nombre:</strong>Merli</p>
-                        <p><strong>Género:</strong>Serie</p>
-                        <p><strong>Actores:</strong> 
-                            <a href="https://es.wikipedia.org/wiki/Carlos_Cuevas" target="_blank">Carlos Cuevas</a>, 
-                            <a href="https://es.wikipedia.org/wiki/David_Solans" target="_blank">David Solans</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Francesc_Orella" target="_blank">Francesc Orella</a>, 
-                        </p>    
-                        <p>Surge un conflicto en la familia de Joan. Pol se distancia de Bruno y Gerard no acepta la relación de su madre con Merlí.</p>
-                        <div class="comenzar">
-                            <a href="https://www.youtube.com/watch?v=rUGeZnlAhP4&ab_channel=ttvnews" target="_blank" class="btn-comenzar">
-                                <button>Comenzar</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="similares">
-                    <div>
-                        <h3>SIMILARES</h3>
-                    </div>
-                    <div class="similares-img">
-                        <a href="vistadetalleserie-el-marginal.html"><img src="../../img/peliculas-series/elmarginal-serie.jpg" alt="el marginal"></a> 
-                        <a href="vistadetalleserie-breaking-bad.html"><img src="../../img/peliculas-series/breakingbad-serie.jpg" alt="breaking bad"></a>      
-                        <a href="vistadetalleserie-ozark.html"><img src="../../img/peliculas-series/ozark-serie.jpg" alt="ozark"></a>
-                        <a href="vistaseriedetalle-thewalkingdead.html"><img src="../../img/peliculas-series/thewalkingdead.serie.jpg" alt="the walking dead"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
+            <div class="similares-img">
+              <a href="vistadetalleserie-el-marginal.html"
+                ><img
+                  src="../../img/peliculas-series/elmarginal-serie.jpg"
+                  alt="el marginal"
+              /></a>
+              <a href="vistadetalleserie-breaking-bad.html"
+                ><img
+                  src="../../img/peliculas-series/breakingbad-serie.jpg"
+                  alt="breaking bad"
+              /></a>
+              <a href="vistadetalleserie-ozark.html"
+                ><img
+                  src="../../img/peliculas-series/ozark-serie.jpg"
+                  alt="ozark"
+              /></a>
+              <a href="vistaseriedetalle-thewalkingdead.html"
+                ><img
+                  src="../../img/peliculas-series/thewalkingdead.serie.jpg"
+                  alt="the walking dead"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </main>
     </header>
-</body>
+  </body>
 </html>

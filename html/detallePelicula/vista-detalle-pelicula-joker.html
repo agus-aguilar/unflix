@@ -1,71 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css">
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../estilos/slick-theme.css" />
+    <link rel="stylesheet" href="../../estilos/slick.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".similares-img").slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
     <title>Joker</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header-vista-principal">
+      <nav>
+        <div class="nav-menu-logo">
+          <a href="../../html/vistas/vista-principal.html">
+            <img src="../../img/unflix-logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../vistas/vista-principal.html">HOME</a></li>
+          <li><a href="../vistas/vista-serie.html">SERIES</a></li>
+          <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
+          <li><a href="../perfil.html">PERFIL</a></li>
+        </ul>
 
-        <nav>
-            <div class="nav-menu-logo">
-                <a href="../../html/vistas/vista-principal.html">
-                    <img src="../../img/unflix-logo.png" alt="">
+        <div class="buscador-input">
+          <img
+            src="../../img/icon/lupa-buscador.png"
+            alt="lupa-buscador-icon"
+          />
+          <input
+            type="text"
+            placeholder="Buscador"
+            name="buscador"
+            id="buscador"
+          />
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <div class="img-detalle">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8ZZ1l7QCVGE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="img-detalle-descripcion">
+              <p><strong>Nombre:</strong> Joker</p>
+              <p><strong>Género:</strong> Ciencia ficción</p>
+              <p>
+                <strong>Actores:</strong>
+                <a
+                  href="https://es.wikipedia.org/wiki/Joaquin_Phoenix"
+                  target="_blank"
+                  >Joaquin Phoenix</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Robert_De_Niro"
+                  target="_blank"
+                  >Robert De Niro</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Zazie_Beetz"
+                  target="_blank"
+                  >Zazie Beetz</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Frances_Conroy"
+                  target="_blank"
+                  >Frances Conroy</a
+                >
+              </p>
+              <p>
+                <strong>Descripción:</strong> Arthur Fleck es un hombre ignorado
+                por la sociedad, cuya motivación en la vida es hacer reír. Pero
+                una serie de trágicos acontecimientos le llevarán a ver el mundo
+                de otra forma. Película basada en Joker, el popular personaje de
+                DC Comics y archivillano de Batman, pero que en este film toma
+                un cariz más realista y oscuro..
+              </p>
+
+              <div class="comenzar">
+                <a
+                  href="https://www.youtube.com/watch?v=8ZZ1l7QCVGE&ab_channel=FandangoLatam"
+                  target="_blank"
+                  class="btn-comenzar"
+                >
+                  <button>Comenzar</button>
                 </a>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="../vistas/vista-principal.html">HOME</a></li>
-                <li><a href="../vistas/vista-serie.html">SERIES</a></li>
-                <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
-                <li><a href="../perfil.html">PERFIL</a></li>
-            </ul>
-
-            <div class="buscador-input">
-                <img src="../../img/icon/lupa-buscador.png" alt="lupa-buscador-icon">
-                <input type="text" placeholder="Buscador" name="buscador" id="buscador">
+          </div>
+          <div class="similares">
+            <div>
+              <h3>SIMILARES</h3>
             </div>
-        </nav>
-
-        <main>
-            <section>
-                <div class="img-detalle">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZZ1l7QCVGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="img-detalle-descripcion">
-                        <p><strong>Nombre:</strong> Joker</p>
-                        <p><strong>Género:</strong> Ciencia ficción</p>
-                        <p><strong>Actores:</strong> 
-                            <a href="https://es.wikipedia.org/wiki/Joaquin_Phoenix" target="_blank">Joaquin Phoenix</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Robert_De_Niro" target="_blank">Robert De Niro</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Zazie_Beetz" target="_blank">Zazie Beetz</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Frances_Conroy" target="_blank">Frances Conroy</a>
-                        </p>
-                        <p><strong>Descripción:</strong> Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en Joker, el popular personaje de DC Comics y archivillano de Batman, pero que en este film toma un cariz más realista y oscuro..</p>
-
-                        <div class="comenzar">
-                            <a href="https://www.youtube.com/watch?v=8ZZ1l7QCVGE&ab_channel=FandangoLatam" target="_blank" class="btn-comenzar">
-                                <button>Comenzar</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="similares">
-                    <div>
-                        <h3>SIMILARES</h3>
-                    </div>
-                    <div class="similares-img">
-                        <a href="../detallePelicula/vista-detalle-pelicula-1917.html"><img src="../../img/peliculas-series/1917-.jpg" alt="1917"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-piratas.html"><img src="../../img/peliculas-series/piratasdelcaribe 1.jpg" alt="piratasdelcaribe1"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-batman.html"><img src="../../img/peliculas-series/batman.jpg" alt="batman"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-parasite.html"><img src="../../img/peliculas-series/parasite.jpg" alt="parasite"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
+            <div class="similares-img">
+              <a href="../detallePelicula/vista-detalle-pelicula-1917.html"
+                ><img src="../../img/peliculas-series/1917-.jpg" alt="1917"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-piratas.html"
+                ><img
+                  src="../../img/peliculas-series/piratasdelcaribe 1.jpg"
+                  alt="piratasdelcaribe1"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-batman.html"
+                ><img src="../../img/peliculas-series/batman.jpg" alt="batman"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-parasite.html"
+                ><img
+                  src="../../img/peliculas-series/parasite.jpg"
+                  alt="parasite"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </main>
     </header>
-</body>
+  </body>
 </html>

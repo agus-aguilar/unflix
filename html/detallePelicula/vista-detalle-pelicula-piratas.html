@@ -1,70 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css">
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../estilos/pelicula-detalle.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../estilos/slick-theme.css" />
+    <link rel="stylesheet" href="../../estilos/slick.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../../slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".similares-img").slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
     <title>Piratas del Caribe</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header-vista-principal">
+      <nav>
+        <div class="nav-menu-logo">
+          <a href="../../html/vistas/vista-principal.html">
+            <img src="../../img/unflix-logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../vistas/vista-principal.html">HOME</a></li>
+          <li><a href="../vistas/vista-serie.html">SERIES</a></li>
+          <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
+          <li><a href="../perfil.html">PERFIL</a></li>
+        </ul>
 
-        <nav>
-            <div class="nav-menu-logo">
-                <a href="../../html/vistas/vista-principal.html">
-                    <img src="../../img/unflix-logo.png" alt="">
+        <div class="buscador-input">
+          <img
+            src="../../img/icon/lupa-buscador.png"
+            alt="lupa-buscador-icon"
+          />
+          <input
+            type="text"
+            placeholder="Buscador"
+            name="buscador"
+            id="buscador"
+          />
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <div class="img-detalle">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2GJh4ElbEjA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="img-detalle-descripcion">
+              <p>
+                <strong>Nombre:</strong> Piratas del Caribe 2: El cofre del
+                hombre muerto
+              </p>
+              <p><strong>Género:</strong>Accion, Aventura, Fantasia</p>
+              <p>
+                <strong>Actores:</strong>
+                <a
+                  href="https://es.wikipedia.org/wiki/Johnny_Depp"
+                  target="_blank"
+                  >Johnny Depp</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Keira_Knightley"
+                  target="_blank"
+                  >Keira Knightley</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Orlando_Bloom"
+                  target="_blank"
+                  >Orlando Bloom</a
+                >,
+                <a
+                  href="https://es.wikipedia.org/wiki/Bill_Nighy"
+                  target="_blank"
+                  >Bill Nighy</a
+                >
+              </p>
+              <p>
+                Will Turner y Elizabeth Swann se van a casar, pero ambos son
+                hechos prisioneros por Lord Cutler Beckett y acusados de haber
+                liberado al capitán Jack Sparrow. Para salvar su vida, Will
+                tendrá que encontrar a Jack y conseguir su misteriosa brújula.
+                Esta esconde un gran poder, además de la clave de una deuda de
+                sangre del pirata con un temible y siniestro Davy Jones, el
+                legendario capitán del barco fantasma Holandés Errante.
+              </p>
+
+              <div class="comenzar">
+                <a
+                  href="https://www.youtube.com/watch?v=2GJh4ElbEjA&ab_channel=CineFantasia"
+                  target="_blank"
+                  class="btn-comenzar"
+                >
+                  <button>Comenzar</button>
                 </a>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="../vistas/vista-principal.html">HOME</a></li>
-                <li><a href="../vistas/vista-serie.html">SERIES</a></li>
-                <li><a href="../vistas/vista-pelicula.html">PELICULAS</a></li>
-                <li><a href="../perfil.html">PERFIL</a></li>
-            </ul>
-
-            <div class="buscador-input">
-                <img src="../../img/icon/lupa-buscador.png" alt="lupa-buscador-icon">
-                <input type="text" placeholder="Buscador" name="buscador" id="buscador">
+          </div>
+          <div class="similares">
+            <div>
+              <h3>SIMILARES</h3>
             </div>
-        </nav>
-
-        <main>
-            <section>
-                <div class="img-detalle">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2GJh4ElbEjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="img-detalle-descripcion">
-                        <p><strong>Nombre:</strong> Piratas del Caribe 2: El cofre del hombre muerto</p>
-                        <p><strong>Género:</strong>Accion, Aventura, Fantasia</p>
-                        <p><strong>Actores:</strong> 
-                            <a href="https://es.wikipedia.org/wiki/Johnny_Depp" target="_blank">Johnny Depp</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Keira_Knightley" target="_blank">Keira Knightley</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Orlando_Bloom" target="_blank">Orlando Bloom</a>, 
-                            <a href="https://es.wikipedia.org/wiki/Bill_Nighy" target="_blank">Bill Nighy</a></p>
-                        <p>Will Turner y Elizabeth Swann se van a casar, pero ambos son hechos prisioneros por Lord Cutler Beckett y acusados de haber liberado al capitán Jack Sparrow. Para salvar su vida, Will tendrá que encontrar a Jack y conseguir su misteriosa brújula. Esta esconde un gran poder, además de la clave de una deuda de sangre del pirata con un temible y siniestro Davy Jones, el legendario capitán del barco fantasma Holandés Errante.</p>
-
-                        <div class="comenzar">
-                            <a href="https://www.youtube.com/watch?v=2GJh4ElbEjA&ab_channel=CineFantasia" target="_blank" class="btn-comenzar">
-                                <button>Comenzar</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="similares">
-                    <div>
-                        <h3>SIMILARES</h3>
-                    </div>
-                    <div class="similares-img">
-                        <a href="../detallePelicula/vista-detalle-pelicula-batman.html"><img src="../../img/peliculas-series/batman.jpg" alt="batman"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-parasite.html"><img src="../../img/peliculas-series/parasite.jpg" alt="parasite"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-joker.html"><img src="../../img/peliculas-series/joker.jpg" alt="joker"></a>
-                        <a href="../detallePelicula/vista-detalle-pelicula-shrek.html"><img src="../../img/peliculas-series/shrek.jpg" alt="shrek"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
+            <div class="similares-img">
+              <a href="../detallePelicula/vista-detalle-pelicula-batman.html"
+                ><img src="../../img/peliculas-series/batman.jpg" alt="batman"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-parasite.html"
+                ><img
+                  src="../../img/peliculas-series/parasite.jpg"
+                  alt="parasite"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-joker.html"
+                ><img src="../../img/peliculas-series/joker.jpg" alt="joker"
+              /></a>
+              <a href="../detallePelicula/vista-detalle-pelicula-shrek.html"
+                ><img src="../../img/peliculas-series/shrek.jpg" alt="shrek"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </main>
     </header>
-</body>
+  </body>
 </html>
