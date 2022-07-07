@@ -1,98 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url(variables.css);
 @import url(tipografia.css);
 @import url(nav.css);
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 
-    max-width: 100vw;
-    max-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
 
-    font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-    background-color: var(--all-background-color);
-    position: relative;
+  background-color: var(--all-background-color);
+  position: relative;
 }
 
 img {
-    max-width: 100%;
-    background-color: transparent;
+  max-width: 100%;
+  background-color: transparent;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 #header-vista-principal {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 /** PELICULAS SERIES **/
 
 .peliculas-series {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
 
 .peliculas-series div {
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    cursor: pointer;
-    height: 70%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  height: 70%;
 
-    box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 1px 21px -2px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 21px -2px rgba(0, 0, 0, 0.75);
 }
 
-.peliculas-series div a{
-    text-decoration: none;
+.peliculas-series div a {
+  text-decoration: none;
 }
 
 .peliculas-series div:hover {
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    -ms-transform:scale(1.05);
-    -o-transform:scale(1.05);
-    transform:scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .peliculas-series img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /** HOVER **/
 
 a:hover {
-    text-decoration: underline;
-    color: var(--color-principal);
+  text-decoration: underline;
+  color: var(--color-principal);
 }
-
 
 /********SERIES PELICULAS DETALLES*********/
 
 .elmarginal {
-    width: 67%;
+  width: 67%;
 }
 
 .thewalkingdead {
-    width: 77%;
+  width: 77%;
 }
 
 .shrek {
-    width: 74%;
+  width: 74%;
 }
 
 .ozark {
-    width: 68%;
+  width: 68%;
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+  .peliculas-series {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .peliculas-series {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

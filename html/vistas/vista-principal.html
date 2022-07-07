@@ -1,128 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../../estilos/vista-principal.css">
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../estilos/vista-principal.css" />
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="js/filtro-vista-principal.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
     <title>UNFLIX</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header-vista-principal">
+      <nav>
+        <div class="nav-menu-logo">
+          <a href="./vista-principal.html">
+            <img src="../../img/unflix-logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li id="home">HOME</li>
+          <li id="serie">SERIES</li>
+          <li id="pelicula">PELICULAS</li>
+          <li><a href="../perfil.html">PERFIL</a></li>
+        </ul>
 
-        <nav>
-            <div class="nav-menu-logo">
-                <a href="./vista-principal.html">
-                    <img src="../../img/unflix-logo.png" alt="">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="vista-principal.html">HOME</a></li>
-                <li><a href="./vista-serie.html">SERIES</a></li>
-                <li><a href="./vista-pelicula.html">PELICULAS</a></li>
-                <li><a href="../perfil.html">PERFIL</a></li>
-            </ul>
-
-            <div class="buscador-input">
-                <img src="../../img/icon/lupa-buscador.png" alt="lupa-buscador-icon">
-                <input type="text" placeholder="Buscador" name="buscador" id="buscador">
-            </div>
-        </nav>
-
+        <div class="buscador-input">
+          <img
+            src="../../img/icon/lupa-buscador.png"
+            alt="lupa-buscador-icon"
+          />
+          <input
+            type="text"
+            placeholder="Buscador"
+            name="buscador"
+            id="buscador"
+          />
+        </div>
+      </nav>
     </header>
-    
+
     <main>
-        <section class="buscar-desplegable">
-            <form action="#">
-                <select name="categorias" id="categorias">
-                    <option value="Seleccionar categoria">Seleccionar categoria</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Suspenso">Suspenso</option>
-                    <option value="Comedia">Comedia</option>
-                    <option value="Accion">Accion</option>
-                </select>
-            </form>
-        </section>
+      <section class="buscar-desplegable">
+        <form action="#">
+          <select name="categorias" id="categorias">
+            <option value="Seleccionar categoria">Seleccionar categoria</option>
+            <option value="Terror" id="terror">Terror</option>
+            <option value="Romance" id="romance">Romance</option>
+            <option value="Suspenso" id="suspenso">Suspenso</option>
+            <option value="Comedia" id="comedia">Comedia</option>
+            <option value="Accion" id="accion">Accion</option>
+          </select>
+        </form>
+      </section>
 
-        <section class="peliculas-series">
-            <div>
-                <a href="../detallePelicula/vista-detalle-pelicula-batman.html">
-                <img src="../../img/peliculas-series/batman.jpg" alt="batman">
-                <h3>Batman</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detallePelicula/vista-detalle-pelicula-1917.html">
-                    <img src="../../img/peliculas-series/1917-.jpg" alt="1917">
-                    <h3>1917</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detallePelicula/vista-detalle-pelicula-joker.html">
-                    <img src="../../img/peliculas-series/joker.jpg" alt="joker">
-                    <h3>Joker</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detallePelicula/vista-detalle-pelicula-parasite.html">
-                    <img src="../../img/peliculas-series/parasite.jpg" alt="parasite">
-                    <h3>Parasite</h3>
-                </a>
-            </div>
-            <div class="shrek">
-                <a href="../detallePelicula/vista-detalle-pelicula-shrek.html">
-                    <img src="../../img/peliculas-series/shrek.jpg" alt="shrek">
-                    <h3>Shrek 2</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detallePelicula/vista-detalle-pelicula-piratas.html">
-                    <img src="../../img/peliculas-series/piratasdelcaribe 1.jpg" alt="piratasdelcaribe1">
-                    <h3>Piratas del Caribe</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detalleSerie/vistadetalleserie-breaking-bad.html">
-                    <img src="../../img/peliculas-series/breakingbad-serie.jpg" alt="Breaking bad">
-                    <h3>Breaking bad</h3>
-                </a>
-            </div>
-            <div class="elmarginal">
-                <a href="../detalleSerie/vistadetalleserie-el-marginal.html">
-                    <img src="../../img/peliculas-series/elmarginal-serie.jpg" alt="el marginal">
-                    <h3>El Marginal</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detalleSerie/vistadetalleserie-friends.html">
-                    <img src="../../img/peliculas-series/friends-serie.jpg" alt="friends">
-                    <h3>Friends</h3>
-                </a>
-            </div>
-            <div>
-                <a href="../detalleSerie/vistadetalleserie-merli.html">
-                    <img src="../../img/peliculas-series/merli-serie.jpg" alt="merli">
-                    <h3>Merli</h3>
-                </a>
-            </div>
-            <div class="ozark">
-                <a href="../detalleSerie/vistadetalleserie-ozark.html">
-                    <img src="../../img/peliculas-series/ozark-serie.jpg" alt="ozark">
-                    <h3>Ozark</h3>
-                </a>
-            </div>
-            <div class="thewalkingdead">
-                <a href="../detalleSerie/vistaseriedetalle-thewalkingdead.html">
-                    <img src="../../img/peliculas-series/thewalkingdead.serie.jpg" alt="the walking dead">
-                    <h3>The walking dead</h3>
-                </a>
-            </div>
-        </section>
-    
+      <section class="peliculas-series">
+        <div id="pelicula1">
+          <a href="../detallePelicula/vista-detalle-pelicula-batman.html">
+            <img src="../../img/peliculas-series/batman.jpg" alt="batman" />
+            <h3>Batman</h3>
+          </a>
+        </div>
+        <div id="pelicula2">
+          <a href="../detallePelicula/vista-detalle-pelicula-1917.html">
+            <img src="../../img/peliculas-series/1917-.jpg" alt="1917" />
+            <h3>1917</h3>
+          </a>
+        </div>
+        <div id="pelicula3">
+          <a href="../detallePelicula/vista-detalle-pelicula-joker.html">
+            <img src="../../img/peliculas-series/joker.jpg" alt="joker" />
+            <h3>Joker</h3>
+          </a>
+        </div>
+        <div id="pelicula4">
+          <a href="../detallePelicula/vista-detalle-pelicula-parasite.html">
+            <img src="../../img/peliculas-series/parasite.jpg" alt="parasite" />
+            <h3>Parasite</h3>
+          </a>
+        </div>
+        <div class="shrek" id="pelicula5">
+          <a href="../detallePelicula/vista-detalle-pelicula-shrek.html">
+            <img src="../../img/peliculas-series/shrek.jpg" alt="shrek" />
+            <h3>Shrek 2</h3>
+          </a>
+        </div>
+        <div id="pelicula6">
+          <a href="../detallePelicula/vista-detalle-pelicula-piratas.html">
+            <img
+              src="../../img/peliculas-series/piratasdelcaribe 1.jpg"
+              alt="piratasdelcaribe1"
+            />
+            <h3>Piratas del Caribe</h3>
+          </a>
+        </div>
+        <div id="serie1">
+          <a href="../detalleSerie/vistadetalleserie-breaking-bad.html">
+            <img
+              src="../../img/peliculas-series/breakingbad-serie.jpg"
+              alt="Breaking bad"
+            />
+            <h3>Breaking bad</h3>
+          </a>
+        </div>
+        <div class="elmarginal" id="serie2">
+          <a href="../detalleSerie/vistadetalleserie-el-marginal.html">
+            <img
+              src="../../img/peliculas-series/elmarginal-serie.jpg"
+              alt="el marginal"
+            />
+            <h3>El Marginal</h3>
+          </a>
+        </div>
+        <div id="serie3">
+          <a href="../detalleSerie/vistadetalleserie-friends.html">
+            <img
+              src="../../img/peliculas-series/friends-serie.jpg"
+              alt="friends"
+            />
+            <h3>Friends</h3>
+          </a>
+        </div>
+        <div id="serie4">
+          <a href="../detalleSerie/vistadetalleserie-merli.html">
+            <img src="../../img/peliculas-series/merli-serie.jpg" alt="merli" />
+            <h3>Merli</h3>
+          </a>
+        </div>
+        <div class="ozark" id="serie5">
+          <a href="../detalleSerie/vistadetalleserie-ozark.html">
+            <img src="../../img/peliculas-series/ozark-serie.jpg" alt="ozark" />
+            <h3>Ozark</h3>
+          </a>
+        </div>
+        <div class="thewalkingdead" id="serie6">
+          <a href="../detalleSerie/vistaseriedetalle-thewalkingdead.html">
+            <img
+              src="../../img/peliculas-series/thewalkingdead.serie.jpg"
+              alt="the walking dead"
+            />
+            <h3>The walking dead</h3>
+          </a>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
