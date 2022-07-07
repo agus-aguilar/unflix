@@ -1,231 +1,224 @@
 @import url(nav.css);
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 
 /*IMPORTAR PARTES DEL CSS*/
 
 @import url(global.css);
 @import url(vista-principal.css);
-body{
-    font-size: 80%;
+body {
+  font-size: 80%;
 }
 
-h1{
-    color: #8847ff;
-    font-size: 8em;
-    text-shadow: 5px 5px 5px #000000;
-    text-align: center;
+h1 {
+  color: #8847ff;
+  font-size: 8em;
+  text-shadow: 5px 5px 5px #000000;
+  text-align: center;
 }
-h2{
-    color: #8847ff;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-size: 3em;
-    text-align: center;
+h2 {
+  color: #8847ff;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  font-size: 3em;
+  text-align: center;
 }
-.container{
-    background-color: rgba(19, 19, 19, 0.842);
-    border-radius: 5px;
-    width: 50%;
-    margin: auto;
-    margin-top: 10px;
-    padding: 20px 40px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.505),-10px -10px 20px rgba(0, 0, 0, 0.361);
+.container {
+  background-color: rgba(19, 19, 19, 0.842);
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.505),
+    -10px -10px 20px rgba(0, 0, 0, 0.361);
 }
-.container h3{
-    color: #8847ff;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
-.input{
-    margin: 20px 0;
-    position: relative;
-}
-.input input{
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 0.4px solid #8847ff;
-    font-size: 17px;
-    padding-top: 20px;
-}
-.input label{
-    color: #9b9b9b;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    pointer-events: none;
-    transition: 0.6s;
-    font-size: 17px;
+.container h3 {
+  color: #8847ff;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
 }
 
-
-form input:focus+label,
-input:valid~label{
-    bottom: 30px;
-    left: 2px;
-    color: #8847ff;
-    font-size: 17px;
+.input {
+  margin: 20px 0;
+  position: relative;
+}
+.input input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.4px solid #8847ff;
+  font-size: 17px;
+  padding-top: 20px;
+}
+.input label {
+  color: #9b9b9b;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  pointer-events: none;
+  transition: 0.6s;
+  font-size: 17px;
 }
 
-.checkbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    font-size: 13px;
-    padding: 10px 5px;
-    font-size: 14px;
-    color: #9b9b9b;
-}
-.checkbox div{
-    margin: 10px;
-}
-.button{
-    border: none;
-    border-radius: 3px;
-    margin: 9%;
-    padding: 3px 20px;
-    font-size: 15px;
-    background-color: rgb(76, 0, 255);
-    text-decoration: none;
-  
-}
-.button a{
-    color: aliceblue;
+form input:focus + label,
+input:valid ~ label {
+  bottom: 30px;
+  left: 2px;
+  color: #8847ff;
+  font-size: 17px;
 }
 
-.button:hover{
-    background-color: #000000;
-    color:#8847ff;
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 13px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #9b9b9b;
 }
-.button a:hover{
-    text-decoration: none;
-    color: #8847ff;
+.checkbox div {
+  margin: 10px;
 }
-.box{
-    position: relative;
+.button {
+  border: none;
+  border-radius: 3px;
+  margin: 9%;
+  padding: 3px 20px;
+  font-size: 15px;
+  background-color: rgb(76, 0, 255);
+  text-decoration: none;
 }
-.recuperar-opcion{
-    position:absolute;
-    font-size: 1em;
-    padding: 5px 0;
-    right: 0;
-    color: #9b9b9b;
-}
-.recuperar{
-    font-size: 1.2em;
-}
-.info{
-    font-size: 1em;
-    color: #9b9b9b;
-}
-
-.registrarse{
-    font-size: 14px;
-    padding: 2px;
-    text-align: center;
-    color: #9b9b9b;
+.button a {
+  color: aliceblue;
 }
 
-a{
-    color: #8847ff;
-    text-decoration: none;
+.button:hover {
+  background-color: #000000;
+  color: #8847ff;
 }
-a:hover{
-    text-decoration: underline;
+.button a:hover {
+  text-decoration: none;
+  color: #8847ff;
+}
+.box {
+  position: relative;
+}
+.recuperar-opcion {
+  position: absolute;
+  font-size: 1em;
+  padding: 5px 0;
+  right: 0;
+  color: #9b9b9b;
+}
+.recuperar {
+  font-size: 1.2em;
+}
+.info {
+  font-size: 1em;
+  color: #9b9b9b;
 }
 
-.container article p{
-    text-align: center;
+.registrarse {
+  font-size: 14px;
+  padding: 2px;
+  text-align: center;
+  color: #9b9b9b;
 }
-.headerForm{
-    margin: 4% 0;
+
+a {
+  color: #8847ff;
+  text-decoration: none;
 }
-.group-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20%;
-    padding: 10px 5px;
-    color: #9b9b9b;
+a:hover {
+  text-decoration: underline;
+}
+
+.container article p {
+  text-align: center;
+}
+.headerForm {
+  margin: 4% 0;
+}
+.group-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20%;
+  color: #9b9b9b;
 }
 
 #numtarjeta {
-    width: 10em;
-    
+  width: 10em;
 }
 #codseg {
-    width: 3em;
+  width: 3em;
 }
-#cbu{
-    width: 11em;
+#cbu {
+  width: 11em;
 }
-.metodoPago{
-    margin: 20px 0;
-    position: relative;
-    color: #9b9b9b;
-    display: flex;
-    flex-direction: column;
-    
+.metodoPago {
+  margin: 20px 0;
+  position: relative;
+  color: #9b9b9b;
+  display: flex;
+  flex-direction: column;
 }
-.metodoPago div label{
-    color: #9b9b9b;
+.metodoPago div label {
+  color: #9b9b9b;
 }
-.input-datos{
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 0.4px solid #8847ff;
-    font-size: 14px;
-    color: aliceblue;
-}
-
-input.error{
-    border-bottom:1px solid crimson;
+.input-datos {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.4px solid #8847ff;
+  font-size: 14px;
+  color: aliceblue;
 }
 
-#mensaje{
-    margin: 1em 0%;
+input.error {
+  border-bottom: 1px solid crimson;
 }
 
-#mostrar{
-    padding: 0.5em;
+#mensaje {
+  margin: 1em 0%;
 }
 
-
-.oculto{
-    display: none;
+#mostrar {
+  padding: 0.5em;
 }
 
-.condiciones{
-    margin-top: 0.5em;
+.oculto {
+  display: none;
 }
 
-.error{
-    color: crimson;
+.condiciones {
+  margin-top: 0.5em;
 }
 
-@media screen and (min-width:48em) {
-    body{
-        background-color: aquamarine;
-        font-size: 90%;
-
-    }
-    .container{
-        width: 25%;
-    }
+.error {
+  color: crimson;
 }
 
-@media screen and (min-width: 60em){
-    body{
-        background-color: coral;
-        font-size: 100%;
+@media screen and (min-width: 48em) {
+  body {
+    background-color: aquamarine;
+    font-size: 90%;
+  }
+  .container {
+    width: 25%;
+  }
+}
 
-    }
-    .container{
-        width: 25%;
-    }
+@media screen and (min-width: 60em) {
+  body {
+    background-color: coral;
+    font-size: 100%;
+  }
+  .container {
+    width: 25%;
+  }
 }

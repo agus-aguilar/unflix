@@ -1,132 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/perfil.css">
-    <link rel="shortcut icon" href="../../img/unflix-logo-svg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/perfil.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/unflix-logo-svg.png"
+      type="image/x-icon"
+    />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+      let valores = $('input[name="pago"]:checked');
+      let seleccionado = false;
+      for (i in valores) {
+        if (valores[i].checked) {
+          seleccionado = true;
+          console.log(seleccionado);
+        }
+      }
+    </script>
 
     <title>Perfil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        
-        <nav>
-            <div class="nav-menu-logo">
-                <a href="./vistas/vista-principal.html">
-                    <img src="../img/unflix-logo.png" alt="">
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="./vistas/vista-principal.html">HOME</a></li>
-                <li><a href="./vistas/vista-serie.html">SERIES</a></li>
-                <li><a href="./vistas/vista-pelicula.html">PELICULAS</a></li>
-                <li><a href="./perfil.html">PERFIL</a></li>
-            </ul>
+      <nav>
+        <div class="nav-menu-logo">
+          <a href="./vistas/vista-principal.html">
+            <img src="../img/unflix-logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="./vistas/vista-principal.html">HOME</a></li>
+          <li><a href="./vistas/vista-serie.html">SERIES</a></li>
+          <li><a href="./vistas/vista-pelicula.html">PELICULAS</a></li>
+          <li><a href="./perfil.html">PERFIL</a></li>
+        </ul>
 
-            <div class="buscador-input">
-                <img src="../img/icon/lupa-buscador.png" alt="lupa-buscador-icon">
-                <input type="text" placeholder="Buscador" name="buscador" id="buscador">
-            </div>
-        </nav>
+        <div class="buscador-input">
+          <img src="../img/icon/lupa-buscador.png" alt="lupa-buscador-icon" />
+          <input
+            type="text"
+            placeholder="Buscador"
+            name="buscador"
+            id="buscador"
+          />
+        </div>
+      </nav>
     </header>
 
     <main>
+      <section class="container">
+        <article>
+          <form action="#" method="post">
+            <div class="user"></div>
 
-        <section class="container">
-            <article>
-                <form action="#" method="post">
+            <div class="input">
+              <input
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                value="Usuario@gmail.com"
+                required
+              />
+              <label for="e-mail">E-mail:</label>
+            </div>
 
-                    <div class="user"></div>
-                    
-                    <div class="input">
-                        
-                        <input type="email" name="e-mail" id="e-mail" value="Usuario@gmail.com" required>
-                        <label for="e-mail">E-mail:</label>
-                    </div>
+            <div class="input">
+              <input
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                required
+              />
+              <label for="contraseña">Contraseña:</label>
+            </div>
 
-                    <div class="input">
-                        
-                        <input type="password" name="contraseña" id="contraseña" required>
-                        <label for="contraseña">Contraseña:</label>
-                    </div>
+            <div class="input">
+              <input
+                type="password"
+                name="nuevacontra"
+                id="nuevacontra"
+                required
+              />
+              <label for="nuevacontra">Nueva contraseña:</label>
+            </div>
 
-                    <div class="input">
-                        
-                        <input type="password" name="nuevacontra" id="nuevacontra" required>
-                            <label for="nuevacontra">Nueva contraseña:</label>
-                    </div>
+            <div class="input">
+              <input
+                type="password"
+                name="repetircontra"
+                id="repetircontra"
+                required
+              />
+              <label for="repetircontra">Repetir contraseña:</label>
+            </div>
+          </form>
+        </article>
+      </section>
 
-                    <div class="input">
+      <section class="container">
+        <article>
+          <p>
+            Ingrese el metodo de pago preferido. Luego tiene la posibilad de
+            cambiarlo.
+          </p>
+          <form action="#" method="post">
+            <div class="metodoPago">
+              <div>
+                <label for="tarjeta">Tarjeta de crédito:</label>
+                <input type="radio" name="pago" id="tarjeta" value="tarjeta" />
+              </div>
 
-                        <input type="password" name="repetircontra" id="repetircontra" required>
-                        <label for="repetircontra">Repetir contraseña:</label>
-                    </div>
-                </form>
-            </article>
-        </section>
+              <div>
+                <label for="numtarjeta"></label>
+                <input
+                  type="number"
+                  name="numtarjeta"
+                  id="numtarjeta"
+                  placeholder="XXXX-XXXX-XXXX-XXXX"
+                  class="input-datos"
+                />
+                <label for="codseg"></label>
+                <input
+                  type="number"
+                  name="codseg"
+                  id="codseg"
+                  placeholder="XXX"
+                  class="input-datos"
+                />
+              </div>
+            </div>
 
-        <section class="container">
+            <div class="metodoPago">
+              <div>
+                <label for="cupon">Cupon de pago: </label>
+                <input type="radio" name="pago" id="cupon" value="cupon" />
+              </div>
 
-            <article>
-                <p>Ingrese el metodo de pago preferido. Luego tiene la posibilad de cambiarlo.</p>
-                <form action="#" method="post">
+              <div>
+                <label for="pagofacil">Pago facil</label>
+                <input type="checkbox" name="pagofacil" id="pagofacil" />
 
-                    <div class="metodoPago">
-                        <div>
-                            <label for="tarjeta">Tarjeta de crédito:</label>
-                            <input type="radio" name="pago" id="tarjeta" value="tarjeta">
-                        </div>
+                <label for="rapipago">Rapipago</label>
+                <input type="checkbox" name="rapipago" id="rapipago" />
+              </div>
+            </div>
 
-                        <div>
-                            <label for="numtarjeta"></label>
-                            <input type="number" name="numtarjeta" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"
-                                class="input-datos">
-                            <label for="codseg"></label>
-                            <input type="number" name="codseg" id="codseg" placeholder="XXX" class="input-datos">
-                        </div>
-                    </div>
+            <div class="metodoPago">
+              <div>
+                <label for="transferencia">Transferencia bancaria </label>
+                <input
+                  type="radio"
+                  name="pago"
+                  id="transferencia"
+                  value="transferencia"
+                />
+              </div>
 
-                    <div class="metodoPago">
-                        <div>
-                            <label for="cupon">Cupon de pago: </label>
-                            <input type="radio" name="pago" id="cupon" value="cupon">
-                        </div>
+              <label for="cbu">CBU: </label>
+              <input
+                type="text"
+                name="cbu"
+                id="cbu"
+                placeholder="2183909411100018971375"
+                class="input-datos"
+              />
+            </div>
 
-                        <div>
-                            <label for="pagofacil">Pago facil</label>
-                            <input type="checkbox" name="pagofacil" id="pagofacil">
-
-                            <label for="rapipago">Rapipago</label>
-                            <input type="checkbox" name="rapipago" id="rapipago">
-                        </div>
-                    </div>
-
-
-                    <div class="metodoPago">
-                        <div>
-                            <label for="transferencia">Transferencia bancaria </label>
-                            <input type="radio" name="pago" id="transferencia" value="transferencia">
-                        </div>
-
-                        <label for="cbu">CBU: </label>
-                        <input type="text" name="cbu" id="cbu" placeholder="2183909411100018971375" class="input-datos">
-                    </div>
-
-                    <div class="group-buttons">
-                        <button class="button"><a href="./vistas/vista-principal.html">Guardar cambios</a></button>
-                        <button class="button"><a href="./vistas/vista-principal.html">Cancelar suscripción</a></button>
-                    </div>
-                </form>
-
-            </article>
-
-        </section>
+            <div class="group-buttons">
+              <button class="button">
+                <a href="./vistas/vista-principal.html">Guardar cambios</a>
+              </button>
+              <button class="button">
+                <a href="./vistas/vista-principal.html">Cancelar suscripción</a>
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
