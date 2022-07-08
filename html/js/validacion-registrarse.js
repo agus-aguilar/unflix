@@ -7,8 +7,6 @@ function validar(){
     var regexusuario =  /^[0-9a-zA-Z]+$/;
     var regexcontraseña =  /^([a-z]+[0-9]+)|([0-9]+[a-z]+)/i;
 
-
-
     reset();
     if(!($("#nombre").val().match(regexnombre))){
 
