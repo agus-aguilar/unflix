@@ -14,6 +14,16 @@
   font-family: "Oswald", sans-serif;
 }
 
+#cerrarSesion {
+  margin-right: 20px;
+  width: 8%;
+  height: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
 body {
   background-color: var(--all-background-color);
   position: relative;

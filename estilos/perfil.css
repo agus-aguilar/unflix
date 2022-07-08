@@ -42,3 +42,13 @@ main {
   color: #9b9b9b;
   font-size: 1.5em;
 }
+
+#cerrarSesion {
+  margin-right: 20px;
+  width: 8%;
+  height: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+}

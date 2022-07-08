@@ -121,3 +121,14 @@ a:hover {
 .btn-comenzar:hover {
   text-decoration: none;
 }
+
+
+#cerrarSesion {
+  margin-right: 20px;
+  width: 8%;
+  height: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+}

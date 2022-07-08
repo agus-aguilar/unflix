@@ -321,4 +321,8 @@ $(document).ready(function () {
         break;
     }
   });
+
+  $("#cerrarSesion").click(function() {
+    localStorage.clear();
+  })
 });
