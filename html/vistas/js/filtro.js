@@ -64,6 +64,20 @@ $(document).ready(function () {
   $("#categorias").change(function () {
     let valor = $(this).val();
     switch (valor) {
+      case "Seleccionar categoria":
+        $("#pelicula1").show();
+        $("#pelicula2").show();
+        $("#pelicula3").show();
+        $("#pelicula4").show();
+        $("#pelicula5").show();
+        $("#pelicula6").show();
+        $("#serie1").show();
+        $("#serie2").show();
+        $("#serie3").show();
+        $("#serie4").show();
+        $("#serie5").show();
+        $("#serie6").show();
+        break;
       case "Terror":
         $("#pelicula1").hide();
         $("#pelicula2").hide();
