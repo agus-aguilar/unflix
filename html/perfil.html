@@ -5,23 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../estilos/perfil.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="js/perfil.js"></script>
     <link
       rel="shortcut icon"
       href="../../img/unflix-logo-svg.png"
       type="image/x-icon"
     />
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>
-      let valores = $('input[name="pago"]:checked');
-      let seleccionado = false;
-      for (i in valores) {
-        if (valores[i].checked) {
-          seleccionado = true;
-          console.log(seleccionado);
-        }
-      }
-    </script>
-
     <title>Perfil</title>
   </head>
 
@@ -55,8 +45,13 @@
     <main>
       <section class="container">
         <article>
-          <form action="#" method="post">
-            <div class="user"></div>
+          <form action="vistas/vista-principal.html" class="form" name="form">
+            <div class="user">
+            </div>
+            
+            <div>
+              <p id="nombre">Nombre Apellido</p>
+            </div>
 
             <div class="input">
               <input
@@ -70,33 +65,18 @@
             </div>
 
             <div class="input">
-              <input
-                type="password"
-                name="contraseña"
-                id="contraseña"
-                required
-              />
-              <label for="contraseña">Contraseña:</label>
+              <input class="pass" type="password" name="pass" required />
+              <label for="pass">Ingresa tu contraseña:</label>
             </div>
 
             <div class="input">
-              <input
-                type="password"
-                name="nuevacontra"
-                id="nuevacontra"
-                required
-              />
-              <label for="nuevacontra">Nueva contraseña:</label>
+              <input class="pass" type="password" name="pass" required />
+              <label for="pass">Ingresa Nueva contraseña:</label>
             </div>
 
             <div class="input">
-              <input
-                type="password"
-                name="repetircontra"
-                id="repetircontra"
-                required
-              />
-              <label for="repetircontra">Repetir contraseña:</label>
+              <input id="pass2" type="password" name="pass2" required />
+              <label for="pass2">Repetir contraseña:</label>
             </div>
           </form>
         </article>
@@ -108,7 +88,9 @@
             Ingrese el metodo de pago preferido. Luego tiene la posibilad de
             cambiarlo.
           </p>
-          <form action="#" method="post">
+
+          <form action="vistas/vista-principal.html" class="form" name="form">
+
             <div class="metodoPago">
               <div>
                 <label for="tarjeta">Tarjeta de crédito:</label>
@@ -172,16 +154,16 @@
             </div>
 
             <div class="group-buttons">
-              <button class="button">
-                <a href="./vistas/vista-principal.html">Guardar cambios</a>
-              </button>
-              <button class="button">
-                <a href="./vistas/vista-principal.html">Cancelar suscripción</a>
-              </button>
+              <input type="submit" value="Enviar" class="button" id="enviar" disabled>
+              <input type="submit" value="Cancelar" class="button" id="cancelar">
             </div>
           </form>
+          <div id="mensaje" class="error">
+  
+          </div>
         </article>
       </section>
+
     </main>
   </body>
 </html>

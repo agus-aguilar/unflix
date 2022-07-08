@@ -136,7 +136,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+main {
+  margin: 5% 0;
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+}
 
+.container {
+  width: 50%;
+}
 .container article p {
   text-align: center;
 }

@@ -38,3 +38,7 @@ main {
 .group-buttons {
   margin-top: 0;
 }
+#nombre{
+  color: #9b9b9b;
+  font-size: 1.5em;
+}

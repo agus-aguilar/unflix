@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../estilos/style.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="js/validacion-registrarse.js"></script>
     <link
       rel="shortcut icon"
       href="../img/unflix-logo-svg.png"
@@ -21,8 +23,9 @@
     <main>
       <section class="container">
         <article>
-          <p>Ingrese sus datos a continuacion:</p>
-          <form action="">
+          <p class="info">Ingrese sus datos a continuacion:</p>
+
+          <form action="../index.html" name="form" id="form">
             <div class="input">
               <input type="text" name="nombre" id="nombre" required />
               <label for="nombre">Nombre: </label>
@@ -57,11 +60,11 @@
       </section>
       <section class="container">
         <article>
-          <p>
+          <p class="info">
             Ingrese el metodo de pago preferido. Luego tiene la posibilad de
             cambiarlo.
           </p>
-          <form action="">
+          <form action="../index.html" name="form" id="form">
             <div class="metodoPago">
               <div>
                 <label for="tarjeta">Tarjeta de crédito:</label>
@@ -125,13 +128,16 @@
             </div>
 
             <div class="group-buttons">
-              <button class="button"><a href="../index.html">Enviar</a></button>
-              <button class="button">
-                <a href="../index.html">Cancelar</a>
-              </button>
+              <input type="submit" value="Enviar" class="button" id="enviar" disabled>
+              <input type="submit" value="Cancelar" class="button" id="cancelar">
             </div>
+
           </form>
+
         </article>
+        <div id="mensaje" class="error">
+  
+        </div>
       </section>
     </main>
   </body>
