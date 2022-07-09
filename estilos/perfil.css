@@ -52,3 +52,29 @@ main {
   border-radius: 10px;
   cursor:pointer;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  #cerrarSesion {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 30%;
+    height: 25px;
+  }
+}

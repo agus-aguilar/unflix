@@ -142,7 +142,6 @@ main {
   gap: 50px;
   padding: 30px;
 }
-
 .container {
   width: 50%;
 }
@@ -217,9 +216,6 @@ input.error {
     background-color: aquamarine;
     font-size: 90%;
   }
-  .container {
-    width: 25%;
-  }
 }
 
 @media screen and (min-width: 60em) {
@@ -230,4 +226,14 @@ input.error {
   .container {
     width: 25%;
   }
+
+  main {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+ .container {
+  width: 100%;
+ }
 }
